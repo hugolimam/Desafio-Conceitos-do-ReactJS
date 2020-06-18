@@ -8,17 +8,28 @@ body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
+.all-page {
   margin: 20px;
 }
 
-div li {
-  display: flex;
-  align-items: center;
+.all-page ul {
+  margin-bottom: 15px;
 }
 
-div li + li {
+.all-page li {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: solid 1px #000;
+}
+
+.all-page li a {
+  text-decoration: none;
+}
+
+.all-page li + li {
   margin-top: 15px;
 }
 
@@ -33,7 +44,16 @@ button {
   font-size: 14px;
 }
 
-div li button {
+.all-page li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+input {
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+
+.form-group {
+  display: inline;
 }
